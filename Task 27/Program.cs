@@ -20,13 +20,23 @@ int SumNumber(int num)
 {
     int sum = 0;
     if (num == 0) return sum;
-    else
+    else if (num > 0)
     {
-        while (num != 0)
+        while (num > 0)
         {
             sum = sum + num % 10;
             num = num / 10;
         }
+    }
+    else if (num < 0)
+    {
+        int sum1=-1;
+        while (num < 0)
+        {
+            sum = (sum + num % 10);
+            num = num / 10;
+        }
+        sum = sum1 *sum;
     }
     return sum;
 }
