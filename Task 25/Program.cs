@@ -5,6 +5,7 @@ int number2 = GetNumberFromUser("Введите целое число В: ", "О
 double res = NumberOfDegree(number1, number2);
 Console.WriteLine($"{number1}, {number2} -> {res}");
 
+
 int GetNumberFromUser(string message, string errorMessage)
 {
     while(true)
@@ -15,6 +16,7 @@ int GetNumberFromUser(string message, string errorMessage)
         Console.WriteLine(errorMessage);
     }
 }
+
 
 double NumberOfDegree(int num1, int num2)
 {
